@@ -13,3 +13,6 @@ for i in range(T):
 
 for result in results:
 	print(result)
+
+# 겹치면 안된다는 뜻이 교차하면 안된다는 뜻인줄 알고 시간 소요.
+# 뜻만 이해하면 난이도가 높지 않다.
