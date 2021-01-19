@@ -17,7 +17,7 @@ def getDecimal(num, decimalNums, digit = 1):
 	return decimalNums
 
 input = sys.stdin.readline
-n = int(input())
+n = int(input()) 
 decimalNums = [] # 감소하는 수를 싹 집어넣을 배열
 
 for num in range(10):
