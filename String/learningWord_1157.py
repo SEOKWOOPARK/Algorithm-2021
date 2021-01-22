@@ -11,6 +11,8 @@ maxValue = max(wordCount) # 빈도 중 최대값
 if wordCount.count(maxValue) >= 2: 
 	print('?') # 최대값이 2개 이상이면 '?'
 else:
-	answer = wordCount.index(maxValue)
-	print(wordList[answer].upper())
+	answer = wordCount.index(maxValue) 
+	print(wordList[answer].upper()) 
+	# wordList를 list(set[])으로 선언한 이유
+	# maxValue의 인덱스 값으로 wordList에서 바로 해당 글자를 조회할 수 있다.
 

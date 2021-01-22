@@ -3,7 +3,7 @@ import sys
 M, N = map(int, sys.stdin.readline().split())
 a = set([])
 b = set([])
-# 각 문자열을 묶음을 set으로 받는다
+# 각 문자열을 묶음을 set으로 받는다 => 듣, 보 모두 중복은 없지만 & 연산자 사용 목적
 
 for i in range(N):
 	a.add(sys.stdin.readline().strip())
