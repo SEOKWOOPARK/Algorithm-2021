@@ -24,7 +24,7 @@ def BFS(x, y, List):
       ny = y + dy[i]
 
       if (0 <= nx < n) and (0 <= ny < n):
-        if List[nx]n[y] == color:
+        if List[nx][ny] == color:
           List[nx][ny] = 0
           queue.append((nx, ny))
 

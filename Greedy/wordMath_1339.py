@@ -20,8 +20,8 @@ for i in range(len(word)):
 sortedList = sorted(dic.items(), key = lambda x: x[1], reverse = True)
 result, num = 0, 9
 
-for i in range(len(sortedList)):
-	result += num * sortedList[i][1]
+for i in sortedList:
+	result += (num * i[1])
 	# result에 자릿수 내림차순으로 정렬된 값들을 9부터 맵핑시킨다.
 	num -= 1
 

@@ -3,7 +3,7 @@ import sys
 input = sys.stdin.readline
 N = int(input())
 num = list(map(int, input().split()))
-last = set() 
+last = set([]) 
 
 for i in num: # 중복을 없애기 위해 set.add로 숫자를 필터링 선별
 	last.add(i)

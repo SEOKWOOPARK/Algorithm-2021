@@ -51,7 +51,7 @@ for i in permutaion:
 	accumulation = 0
 	li = list(i) # 두 개씩 뽑힌 튜플을 리스트로 바꾼다
 	for j in range(1, n): # 차이값들 계산
-		accumulation += abs(li[j] = li[j - 1])
+		accumulation += abs(li[j] - li[j - 1])
 	answer = max(answer, accumulation)
 
 print(answer)

@@ -11,10 +11,10 @@ for i in range(9): # people 배열에 난쟁이 키를 다 넣는다
 answer = list(combinations(people, 7)) # 7명 뽑는 가능한 조합 모두 구하기
 
 while c < len(answer):
-	if sum(answer[count]) == 100:
-		answer[count] = list(answer[count])
-		answer[count].sort()
-		print(*answer[count])
+	if sum(answer[c]) == 100:
+		answer[c] = list(answer[c])
+		answer[c].sort()
+		print(*answer[c])
 		break # 조건 만족하는 케이스구하면 끝낸다
 	
 	c += 1

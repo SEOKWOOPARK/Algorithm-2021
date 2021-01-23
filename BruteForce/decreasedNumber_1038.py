@@ -6,7 +6,7 @@ def getDecimal(num, decimalNums, digit = 1):
 		# 1자리, 2자리, 3자리 ∙∙∙ 9자리
 		return
 	
-	decimalNums(num) # 감소하는 수 모으기
+	decimalNums.append(num) # 감소하는 수 모으기
 
 	for i in range(10):
 		if (num % 10) > i: 
