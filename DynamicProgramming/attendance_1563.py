@@ -7,7 +7,7 @@ dp=[[[-1 for absent in range(3)] for late in range(2)] for day in range(N + 1)]
 
 # 역방향 DP => 가장 마지막 깊이(day4)부터 누적해서 day 1까지 만든다 
 def dfs(day, late, absent):
-	if (late == 2) or (absent == 3): # 지각 2번 or 결석연속3 번
+	if (late == 2) or (absent == 3): # 지각 2번 or 결석연속 3번
 		return 0
 
 	if day == N:

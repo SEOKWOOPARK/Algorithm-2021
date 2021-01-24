@@ -10,8 +10,8 @@ for i in range(n):
 
 for i in c:
 	for j in range(1, k + 1):
-		if i - j >= 0:
-			dp[j] += dp[i - j]
+		if j - i >= 0:
+			dp[j] += dp[j - i]
 
 print(dp[k])
 

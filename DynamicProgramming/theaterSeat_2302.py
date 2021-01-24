@@ -9,7 +9,7 @@ gap = []
 answer = 1
 
 for i in range(2, len(fibo)): # 피보나치 수열 만드는 부분
-	fibo[i] = fibo[i - 1] + fibo[i - 1]
+	fibo[i] = fibo[i - 1] + fibo[i - 2]
 
 for i in range(M):
 	vip.append(int(input()))
