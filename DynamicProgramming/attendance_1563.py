@@ -16,7 +16,6 @@ def dfs(day, late, absent):
 	if dp[day][late][absent] == -1: # 참석 + 지각 + 결석
 		attend = dfs(day + 1, late, 0) + dfs(day + 1, late + 1, 0) + dfs(day + 1, late, absent + 1)
 		dp[day][late][absent] = attend
-
 		return attend
 	else:
 		return dp[day][late][absent]
