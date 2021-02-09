@@ -16,3 +16,8 @@ for i in alphabet:
 		counting.append(i) # 5개 이상이면 해당 문자 push
 
 counting.sort() # 사전순 출력
+
+if len(counting):
+	print(''.join(counting))
+else:
+	print('PREDAJA')

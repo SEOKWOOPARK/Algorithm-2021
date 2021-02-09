@@ -14,4 +14,3 @@ for i in c:
 			dp[j] += dp[j - i]
 
 print(dp[k])
-

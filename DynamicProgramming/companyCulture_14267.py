@@ -3,7 +3,7 @@ sys.setrecursionlimit(1000000)
 
 def nextStep(transmission, nextTaker): # transmission: 전달되는 칭찬, nextTaker: 전달받을 직원
 	transmission += praise[nextTaker] 
-		# 현재 직원이 전달받은 칭찬 + 전달해줄 칭찬 누적 => 다음 부하직원에게 넘길 준비
+		# 현재 직원이 전달받은 칭찬 + 현재 직원이 전달해줄 칭찬 누적 => 다음 부하직원에게 넘길 준비
 	praise[nextTaker] += (transmission - praise[nextTaker])
 		# 현재 직원이 직속 상사로부터 받은 칭찬을 누적
 	for i in sub[nextTaker]: # DFS로 자신이 받은 칭찬 부하들에게 하달.
