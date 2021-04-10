@@ -31,7 +31,7 @@ box, ripe = [], deque()
 for i in range(N):
     row = list(map(int, r().split()))
     for j in range(M):
-        if row[j] == 1:
+        if row[j] == 1: # 익은 토마토일 때
             ripe.append([i, j])
     box.append(row)
 
