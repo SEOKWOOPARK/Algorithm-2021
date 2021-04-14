@@ -5,7 +5,7 @@ li = ["a", "b", "c", "d", "e"]
 comb = combinations(li, 3)
 
 for c in comb:
-	print(c)
+    print(c)
 
 # ('a', 'b', 'c')
 # ('a', 'b', 'd')
@@ -32,12 +32,12 @@ password = sorted(list(map(str, input().split())))
 comb = combinations(password, L)
 
 for c in comb: # 생성된 조합 단어에서 한 글자씩 방문
-	counting = 0 # 모음 갯수를 세기 위한 장치
-	for letter in c:
-		if letter in vowels:
-			counting += 1
+    counting = 0 # 모음 갯수를 세기 위한 장치
+    for letter in c:
+        if letter in vowels:
+            counting += 1
 
-	if (counting >= 1) and (counting <= L - 2): 
-		# 자음이 최소 2개 있어야 하므로 L개 중에서 모음은 최소 1개고 최대 L - 2개.
-		print(''.join(c))
+    if (counting >= 1) and (counting <= L - 2): 
+        # 자음이 최소 2개 있어야 하므로 L개 중에서 모음은 최소 1개고 최대 L - 2개.
+        print(''.join(c))
 
