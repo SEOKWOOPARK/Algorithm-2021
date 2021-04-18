@@ -8,6 +8,7 @@ c = [] # 동전 종류가 들어갈 배열
 for i in range(n):
 	c.append(int(sys.stdin.readline()))
 
+
 for i in c:
 	for j in range(1, k + 1):
 		if j - i >= 0:
