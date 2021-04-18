@@ -4,18 +4,18 @@ N = int(sys.stdin.readline())
 dp = [1] * 10
 
 for i in range(N):
-	case = int(sys.stdin.readline())
-	li = [[0] * 10 for i in range(case)]
+    case = int(sys.stdin.readline())
+    li = [[0] * 10 for i in range(case)]
 
-	for j in range(len(li)):
-		if j == 0: # 첫째자리 케이스만 처음 선언된 dp 사용
-			for x in range(len(li[j])):
-				li[j][x] = int((dp[x] * (dp[x] + 1)) / 2)
-		elif j > 0: # 이전 값들을 활용
-			for x in range(len(li[j])):
-				li[j][x] = int(sum(li[j - 1][:x + 1]))
+    for j in range(len(li)):
+        if j == 0: # 첫째자리 케이스만 처음 선언된 dp 사용
+            for x in range(len(li[j])):
+                li[j][x] = int((dp[x] * (dp[x] + 1)) / 2)
+        elif j > 0: # 이전 값들을 활용
+            for x in range(len(li[j])):
+                li[j][x] = int(sum(li[j - 1][:x + 1]))
 
-	print(sum(li[-1]))
+    print(sum(li[-1]))
 
 
 # 1자리인 경우

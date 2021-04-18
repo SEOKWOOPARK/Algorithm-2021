@@ -9,19 +9,19 @@ gap = []
 answer = 1
 
 for i in range(2, len(fibo)): # 피보나치 수열 만드는 부분
-	fibo[i] = fibo[i - 1] + fibo[i - 2]
+    fibo[i] = fibo[i - 1] + fibo[i - 2]
 
 for i in range(M):
-	vip.append(int(input()))
+    vip.append(int(input()))
 
 vip.append(N + 1)
 # vip석을 통해서 일반석의 길이를 구하기 위해 양 끝의 값은 1과 (N + 1)로 박아둔다.
 
 for i in range(1, len(vip)):
-	gap.append(vip[i] - vip[i - 1] - 1)
-	# 연속된 일반석들의 길이를 구해준다.
+    gap.append(vip[i] - vip[i - 1] - 1)
+    # 연속된 일반석들의 길이를 구해준다.
 
 for i in range(len(gap)):
-	answer *= fibo[gap[i]]
+    answer *= fibo[gap[i]]
 
 print(answer)
