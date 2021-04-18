@@ -6,10 +6,10 @@ b = set([])
 # 각 문자열을 묶음을 set으로 받는다 => 듣, 보 모두 중복은 없지만 & 연산자 사용 목적
 
 for i in range(N):
-	a.add(sys.stdin.readline().strip())
+    a.add(sys.stdin.readline().strip())
 
 for i in range(M):
-	b.add(sys.stdin.readline().strip())
+    b.add(sys.stdin.readline().strip())
 
 mutual = list(a & b)
 # a & b => 배열을 감싼 set끼리 '&'연산할 때 공통된 것을 골라준다.
@@ -19,7 +19,7 @@ mutual = list(a & b)
 print(len(mutual))
 
 for m in sorted(mutual): # 정렬 -> 사전순 출력
-	print(m)
+    print(m)
 
 
 # set.add(x) => set에 x원소 추가

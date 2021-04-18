@@ -8,9 +8,9 @@ end = 0
 count = 0
 
 for m in meetings:
-	if end <= m[0]:
-		end = m[1]
-		count += 1
+    if end <= m[0]:
+        end = m[1]
+        count += 1
 
 print(count)
 
