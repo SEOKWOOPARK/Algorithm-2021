@@ -11,7 +11,7 @@ for i in range(M): # 크리티컬한 부분. 나무 나이 대소비교를 위�
     x, y, z = map(int, input().split())
     tree[x - 1][y - 1].append(z) # 나이를 배열에 넣는다
 
-for x in range(K):
+for x in range(K): # K년 만큼 돌린다.
     # 봄
     for i in range(N):
         for j in range(N):
@@ -25,8 +25,8 @@ for x in range(K):
                     ground[i][j] -= tree[i][j][idx]
                     tree[i][j][idx] += 1 # 트리 나이 한살 먹기
                     idx += 1 # 그 다음 나이 많은 나무로 반복문 진행
-                else:
-                    die = tree[i][j][idx:] # 양분 부족 -> 못먹은 나무들 
+                else: # 양분 부족 -> 못먹은 나무들 
+                    die = tree[i][j][idx:] # 해당 idx부터 die
                     for t in die:
                         ground[i][j] += (t // 2)
                     tree[i][j] = tree[i][j][:idx] # 살아 있는 나무만 그 칸에 남긴다.

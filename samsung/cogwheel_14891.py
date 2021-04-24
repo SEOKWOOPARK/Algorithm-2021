@@ -2,7 +2,7 @@ import sys
 from collections import deque
 
 def checkRight(start, dirs):
-    if (start > 4) or gears[start - 1][2] == gears[start]:
+    if (start > 4) or gears[start - 1][2] == gears[start][6]:
         return
     
     if gears[start - 1][2] != gears[start][6]:
