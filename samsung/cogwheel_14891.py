@@ -2,7 +2,8 @@ import sys
 from collections import deque
 
 def checkRight(start, dirs):
-    if (start > 4) or gears[start - 1][2] == gears[start][6]:
+    # start가 범위를 넘어서거나 마지막 톱니바퀴인데 3번째 톱니랑 접점 극이 같을 때
+    if (start > 4) or gears[start - 1][2] == gears[start][6]: 
         return
     
     if gears[start - 1][2] != gears[start][6]:
